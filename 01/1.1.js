@@ -1,7 +1,7 @@
 const hasUniqueCharacters = (string) => {
   const uniqueCharacters = new Set();
 
-  for (let character of string) {
+  for (let character of string.toLowerCase()) {
     if (uniqueCharacters.has(character)) return false;
     uniqueCharacters.add(character);
   }
