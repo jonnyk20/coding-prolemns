@@ -20,8 +20,8 @@ var findDiagonalOrder = function(matrix) {
   }
 
 
-  const lastRowIndex = matrix[0].length - 1;
-  const lastColumnIndex = matrix.length - 1;
+  const lastRowIndex = matrix.length - 1;
+  const lastColumnIndex = matrix[0].length - 1;
   
   const getElement = (row, column) => {
       if (matrix[row] === undefined) {
